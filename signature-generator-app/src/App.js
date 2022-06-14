@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import "./App.css";
 import SignMessage from "./components/SignMessage.jsx";
-import VerifyMessage from "./components/VerifyMessage";
-import VerifiedSignatures from "./components/VerifiedSignatures";
+import VerifySignature from "./components/VerifySignature";
+import GeneratedSignatures from "./components/GeneratedSignatures";
 import WalletButton from "./components/WalletButton";
 import ErrorMessage from "./components/ErrorMessage";
 
@@ -40,10 +40,10 @@ function App() {
       <div className="main-container">
         <div className="upper-container">
           <SignMessage onSubmit={sigToArrHandler} setError={setError} />
-          <VerifyMessage signatures={signatures} />
+          <VerifySignature signatures={signatures} />
         </div>
         <div className="lower-container">
-          <VerifiedSignatures signatures={signatures}></VerifiedSignatures>
+          <GeneratedSignatures signatures={signatures}></GeneratedSignatures>
         </div>
       </div>
     </div>

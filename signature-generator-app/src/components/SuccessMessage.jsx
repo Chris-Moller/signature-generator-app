@@ -1,4 +1,4 @@
-import "./styles/VerifyMessage.css";
+import "./styles/VerifySignature.css";
 
 const SuccessMessage = ({ message }) => {
   if (!message) return null;

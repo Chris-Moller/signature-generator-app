@@ -1,4 +1,4 @@
-import "./styles/VerifyMessage.css";
+import "./styles/VerifySignature.css";
 import SuccessMessage from "./SuccessMessage";
 import ErrorMessage from "./ErrorMessage";
 import { useState } from "react";

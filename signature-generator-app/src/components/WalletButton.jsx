@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./styles/WalletButton.css";
 
 const WalletButton = ({ setError }) => {
+  const [walletAddress, setWallet] = useState("");
   const connectWallet = async () => {
     if (window.ethereum) {
       try {
@@ -45,8 +46,6 @@ const WalletButton = ({ setError }) => {
     }
   };
 
-  const [walletAddress, setWallet] = useState("");
-
   const walletConnectHandler = async () => {
     try {
       const walletResponse = await connectWallet();
@@ -86,8 +85,7 @@ const WalletButton = ({ setError }) => {
 
   useEffect(() => {
     load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, );
 
   return (
     <div>
