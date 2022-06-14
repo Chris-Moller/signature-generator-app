@@ -1,0 +1,1 @@
+<!-- A react app showcasing signature varification with MetaMask and Ethers.js -->
